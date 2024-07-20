@@ -35,23 +35,28 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-4 p-4" @submit.prevent="onSubmit">
-    <UFormGroup label="Name" name="name">
-      <UInput v-model="state.name" />
-    </UFormGroup>
+  <div class="about-me max-w-4xl mx-auto p-6">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <div class="bg-green-500 px-4 py-3 border-b">
+        <h2 class="text-2xl font-semibold">Contact Me</h2>
+      </div> 
+    </div>
+    <UContainer class="w-4/5 ">
+        <UForm :schema="schema" :state="state" class="space-y-4 p-4" @submit.prevent="onSubmit">
+            <UFormGroup label="Name" name="name">
+                <UInput v-model="state.name" />
+            </UFormGroup>
 
-    <UFormGroup label="Email" name="email">
-      <UInput v-model="state.email" type="email" />
-    </UFormGroup>
+            <UFormGroup label="Email" name="email">
+                <UInput v-model="state.email" type="email" />
+            </UFormGroup>
 
-    <UFormGroup label="Message" name="message">
-      <UTextarea v-model="state.message" />
-    </UFormGroup>
+            <UFormGroup label="Message" name="message">
+                <UTextarea v-model="state.message" placeholder="Please enter your message"/>
+            </UFormGroup>
 
-    <UButton type="submit" label="Submit" />
-  </UForm>
+            <UButton type="submit" label="Submit" size="xl" block />
+        </UForm>
+    </UContainer>
+  </div>
 </template>
-
-function resetForm() {
-  throw new Error('Function not implemented.');
-}
