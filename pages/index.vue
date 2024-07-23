@@ -1,7 +1,14 @@
 <template>
     <div>
         <h1>Londolani Ndou</h1>
-        <h2>Full-Stack developer</h2>
-        <p>I'm a passionate full-stack developer with a love for creating beautiful and functional web applications. I specialize in modern JavaScript frameworks and have a keen eye for design.</p>   
+        <p>Software Engineer</p>
+        <p> Welccome to my personal portfolio I built using NuxtJS which is a VueJS framework.</p>
+
+        <p>Heres what I get to when I'm not coding:</p>
+        <ul>
+            <li>Reading</li>
+            <li>Playing video games</li>
+            <li>Playing Tennis</li>
+        </ul>
     </div>
 </template>
