@@ -2,7 +2,7 @@
   <div class="about-me max-w-4xl mx-auto p-6">
     <div class="bg-white shadow-md rounded-lg overflow-hidden">
       <div class="bg-green-500 px-4 py-3 border-b">
-        <h2 class="text-2xl font-semibold">About Me</h2>
+        <h2 class="text-2xl font-semibold text-white">About Me</h2>
       </div>
       <div class="px-6 py-4">
         <p class="mb-4">Hi there!</p>

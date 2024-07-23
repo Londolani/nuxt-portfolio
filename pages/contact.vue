@@ -35,28 +35,32 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-  <div class="about-me max-w-4xl mx-auto p-6">
+  <div class="contact-me max-w-4xl mx-auto p-6">
     <div class="bg-white shadow-md rounded-lg overflow-hidden">
       <div class="bg-green-500 px-4 py-3 border-b">
-        <h2 class="text-2xl font-semibold">Contact Me</h2>
-      </div> 
-    </div>
-    <UContainer class="w-4/5 ">
-        <UForm :schema="schema" :state="state" class="space-y-4 p-4" @submit.prevent="onSubmit">
+        <h2 class="text-2xl font-semibold text-white">Contact Me</h2>
+      </div>
+      <div class="px-6 py-4">
+        <UContainer class="w-full">
+          <UForm :schema="schema" :state="state" class="space-y-4" @submit.prevent="onSubmit">
             <UFormGroup label="Name" name="name">
-                <UInput v-model="state.name" />
+              <UInput v-model="state.name" />
             </UFormGroup>
 
             <UFormGroup label="Email" name="email">
-                <UInput v-model="state.email" type="email" />
+              <UInput v-model="state.email" type="email" />
             </UFormGroup>
 
             <UFormGroup label="Message" name="message">
-                <UTextarea v-model="state.message" placeholder="Please enter your message"/>
+              <UTextarea v-model="state.message" placeholder="Please enter your message"/>
             </UFormGroup>
 
-            <UButton type="submit" label="Submit" size="xl" block />
-        </UForm>
-    </UContainer>
+            <div class="text-center">
+              <UButton type="submit" label="Submit" size="xl" block class="w-1/3 mx-auto bg-green-500 text-white" />
+            </div>
+          </UForm>
+        </UContainer>
+      </div>
+    </div>
   </div>
 </template>
