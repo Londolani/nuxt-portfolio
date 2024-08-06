@@ -11,10 +11,13 @@
           </div>
           <div class="text-gray-700">
             <p class="mb-4">
-              As a Software Engineer 1 at Superbalist, I work on the Shopfront web team. I am responsible for building and maintaining the user interface of the Superbalist website. I work with the design team to implement new features and improve the user experience.
+              As a Software Engineer 1 at Superbalist, I work on the Shopfront web team. I am responsible for building and maintaining the user 
+              interface of the Superbalist website. I work with the design team to implement new components and improve the user experience.
             </p>
             <p>
-              I use technologies such as VueJS, and Tailwind CSS to build responsive and performant web applications. I also do testing for the work I implement using Jest and Cypress.
+              I use technologies such as VueJS, and Tailwind CSS to build responsive and performant web applications.
+               I also do testing for the work I implement using Jest and Cypress.
+               I have experince in CI/CD pipelines and have worked with Jenkins.
             </p>
           </div>
         </div>
